@@ -91,11 +91,10 @@ def problem1a(rectangle, square, thickness, window):
     rectangle.attach_to(window)
     square.attach_to(window)
     p1 = square.center
-    midx = (rectangle.get_upper_left_corner().x + rectangle.get_upper_right_corner().x)/2
-    midy = rectangle.get_upper_left_corner().y
-    p2 = rg.Point(midx, midy)
+    x = rectangle.get_upper_left_corner().x + rectangle.get_width() / 2
+    y = rectangle.get_upper_left_corner().y
 
-    line = rg.Line(p1, p2)
+    line = rg.Line(p1, rg.Point(x, y))
     line.thickness = thickness
     line.color = rectangle.outline_color
     line.attach_to(window)

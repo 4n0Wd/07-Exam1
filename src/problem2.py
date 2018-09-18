@@ -338,7 +338,7 @@ def problem2b(a, b, x):
          and the sum   16 + 18 + 20 + 24   is 78.
      """
     count = 0
-    for k in range(a, b + 1, 1):
+    for k in range(a, b + 1):
         if number_of_factors(k) >= x:
             count = count + k
     return count
@@ -466,7 +466,7 @@ def problem1c(m):
              11 13 17 19,
            and 11 + 13 + 17 + 19 = 60.
      """
-    return ((2 * m + 10) * 9) / 2 - problem2b(m + 1, m + 9, 3)
+    return 9 * m + 45 - problem2b(m + 1, m + 9, 3)
 
     ############################################################################
     # DONE: 4. Implement and test this function.  See the IMPORTANT NOTE below!
