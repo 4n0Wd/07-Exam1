@@ -110,7 +110,6 @@ def problem3(point, length, delta, window):
         line.attach_to(window)
     window.render()
 
-
     # --------------------------------------------------------------------------
     # DONE: 2. Implement and test this function.
     # DONE (continued):  IMPORTANT: Use this ITERATIVE ENHANCEMENT PLAN:
