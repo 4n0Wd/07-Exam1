@@ -466,11 +466,7 @@ def problem1c(m):
              11 13 17 19,
            and 11 + 13 + 17 + 19 = 60.
      """
-    count = 0
-    for k in range(m + 1, m + 10):
-        if number_of_factors(k) == 2:
-            count = count + k
-    return count
+    return ((2 * m + 10) * 9) / 2 - problem2b(m + 1, m + 9, 3)
 
     ############################################################################
     # DONE: 4. Implement and test this function.  See the IMPORTANT NOTE below!
